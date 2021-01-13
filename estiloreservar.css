@@ -1,0 +1,55 @@
+body{   
+    margin: 0;
+    padding: 0;
+    background-image: url(img/Habitaciones/1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.reservar{
+    margin: o auto;
+    padding: 0px 0px;
+       
+}
+.datos{    
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 310px;
+    padding: 23px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.datos input{
+    border-radius: 3px;
+    background-color: rgb(39, 38, 38);
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    padding: 15px 20px;
+    color: white;
+    margin-bottom: 0px;
+    outline: none;
+    box-sizing: border-box 16px ;
+}
+
+.datos table{
+    color: white;
+}
+.botones button{
+    border:1px solid slategray;
+    border-radius: 3px;
+    height: 30px;
+    background-color: rgb(39, 38, 38);
+    color:white;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+select{
+    border:1px solid  rgb(39, 38, 38);
+    border-radius: 3px;
+    background:  rgb(39, 38, 38);
+    width: 100%;
+    height: 30px;
+    color: white;  
+}

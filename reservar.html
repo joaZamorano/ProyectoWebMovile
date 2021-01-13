@@ -2,32 +2,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservar</title>
+    <title>Hotel la Diversión</title>
+    <link rel="stylesheet" href="reservar.css">
 </head>
-<body style="background-color:blanchedalmond;">
- <h1>Reservar</h1>
- <p>realiza tu reserva y completa los siguientes datos</p>
- <h3 style="font-family:courier;">Nombre:<input type="text"> 
-    Apellido: <input type="text"><br>
-    Rut: <input type="number">
-    Correo: <input type="text"><br>
-    Telefono: <input type="number"><br>
-    Fecha de llegada: <input type="date">
-    Fecha de retiro: <input type="date"><br>
-    Cantidad de personas: <input type="number">
-    Tipo habitacion: <Select>habitacion
-        <option >1 estrella</option>
-        <option >2 estrella</option>
-        <option >3 estrella</option>
-        <option >vip</option>
-    </Select><br>
-    Medio de pago: <Select>medio de pago
-        <option >debito</option>
-        <option >credito</option>
-    </Select> 
-</h3>
-<button>atras</button> 
-<button>aceptar</button>
+<body>
+ <div class="reservar">
+     <h1>Reservar</h1>
+    <p>para realiza tu reserva completa los siguientes datos requeridos </p>
+    <hr>  
+</div>
+<div class="datos">
+    <h1><b><i>Reserva tu habitacion</i></b></h1>
+    <hr>
+    <br>
+    <table >
+    <tr>
+        <td width="50%">Nombre:</td>  
+        <td width="50%"><input type="text"/></td> 
+    </tr>
+        <tr>
+        <td width="50%">Apellido:</td>
+        <td width="50%"><input type="text"/></td>
+        </tr>
+    <tr>
+        <td width="50%">Rut</td>  
+        <td width="50%"><input type="number"/></td>
+    </tr>
+        <tr>
+        <td width="50%">Correo:</td> 
+        <td width="50%"><input type="text"/></td>
+        </tr>
+    <tr>   
+        <td width="50%">Telefono:</td> 
+        <td width="50%"><input type="number"/></td>
+    </tr> 
+        <tr>    
+        <td width="50%">Fechade llegada:</td> 
+        <td width="50%"><input type="date"/></td>
+        </tr>
+    <tr>
+        <td width="50%">Fecha de retiro:</td> 
+        <td width="50%"><input type="date"/></td>
+    </tr>
+        <tr>
+        <td width="50%">Cantidad de personas</td> 
+        <td width="50%"><input type="number" id="number" name="amount" value="1" min="1" max="3"/></td>
+        </tr>
+    
+    <tr>
+    </tr>
+    <tr>
+    <td width="50%">Cantidad de habitaciones</td> 
+    <td width="50%"><input type="number" id="number" name="amount" value="1" min="1" max="5"/></td>
+    </tr>
+
+<tr>
+        <td width="50%">Tipo habitacion: </td>
+            <td width="50%"><Select>habitacion
+                <option >1 estrella</option>
+                <option >2 estrella</option>
+                <option >3 estrella</option>
+                <option >vip</option>
+                </Select></td>
+    </tr>            
+        <tr>
+                <td width="50%"> Medio de pago: </td>
+                    <td width="50%"><Select>medio de pago
+                <option >debito</option>
+                <option >credito</option>
+                </Select> </td>
+        </tr>   
+</div>
+<div class="botones">
+    <button><b>atras</b></button>
+    <button><b>aceptar</b></button>
+</div>
 
 </body>
 </html>
