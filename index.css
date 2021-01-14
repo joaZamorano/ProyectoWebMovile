@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.hotel{
+    margin: o auto;
+    padding: 23px 0px;
+    background-image: url(img/FONDO.jpg);
+    height: 40px;
+    color: rgb(219, 219, 219);
+}
+
+.boton1{
+position: relative;
+top:30px;
+left: 20px;
+border-radius: 5px;
+display: inline-block;
+padding: 15px 20px;
+text-decoration: none;
+}
+
+.boton2{
+    position: relative;
+    top:30px;
+    left: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.boton3{
+        position: relative;
+        top:-200px;
+        left: -250px;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+}
+.boton4{
+    position: relative;
+    top:-200px;
+    left: -100px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.boton5{
+    position: relative;
+    top:-200px;
+    left: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.boton6{
+    position: relative;
+    top:-200px;
+    left: 450px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.boton7{
+    position: relative;
+    top:500px;
+    left: -750px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.boton8{
+    position: relative;
+    top:500px;
+    left: -600px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.boton9{
+    position: relative;
+    top:500px;
+    left: -200px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.boton10{
+    position: relative;
+    top:500px;
+    left: -50px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.imagen1{
+    position: relative;
+    top: 100px;
+    left: 210px;
+}
+.imagen2{
+    position: relative;
+    top: 100px;
+    left: 500px;
+}
+.imagen3{
+    position: relative;
+    top: 800px;
+    left: 0px;
+}
+.imagen4{
+    position: relative;
+    top: 458px;
+    left: 210px;
+}
+
+body{
+    background-image: url(img/fondo\ 4.jpg);
+    margin: 0;
+    padding: 0;
+
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
