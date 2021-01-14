@@ -3,57 +3,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<style>
-    * {
-         box-sizing: border-box;
-    }
-        
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-        
-    header {
-        background-color: slategrey;
-        padding: 30px;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-    }
-        
-    nav{
-        float: inline-start;
-        width: 30%;
-        background: #ccc;
-        padding: 20px;
-    }
- </style>
     <title>hotelladiversion/registro</title>
+    <link rel="stylesheet" href="registro.css">
 </head>
 <body>
-    <header>
-        <h2>Registro</h2> 
-    </header>
-    <section>
-        <article>
+   <div class="registerbox">
+       <h1><b><i>Registrate </i></b></h1>
+       <hr>
+       <br>
+       <table >
+       <tr>
+           <td width="50%">Nombre:</td>  
+           <td width="50%"><input type="text"/></td> 
+       </tr>
+           <tr>
+           <td width="50%">Apellido:</td>
+           <td width="50%"><input type="text"/></td>
+           </tr>
+       <tr>
+           <td width="50%">Rut</td>  
+           <td width="50%"><input type="text"/></td>
+       </tr>
+           <tr>
+           <td width="50%">Correo:</td> 
+           <td width="50%"><input type="text"/></td>
+           </tr>
+       <tr>   
+           <td width="50%">Telefono:</td> 
+           <td width="50%"><input type="text"/></td>
+       </tr> 
+           <tr>    
+           <td width="50%">Fecha de nacimiento:</td> 
+           <td width="50%"><input type="date"/></td>
+        </tr>
+    <tr>
+        <div class="botones">
             <form action="index.html" method="GET">
-                <h3>Nombres:<input type="text">
-                <br> 
-                <h3>Apellidos:<input type="text">
-                <br>
-                <h3>Número Teléfono:<input type="text">
-                <br>
-                <h3>Correo:<input type="text">
-                <br>
-                <h3>Contraseña:<input type="password">
-                <br>
-                <h3>Confirmar Contraseña: <input type="password">
-                <br>
-                <button type="submit" formaction="index.html" onclick="alert('Registro exitoso!')">Registrarse</button>
-            </form>
-        </article>
+         <button type="submit" formaction="login.html">Volver</button>
+         <button type="submit" formaction="index.html" onclick="alert('Registro exitosa!')">Aceptar</button>
+     </form>
+        </div>
+    </tr>
 
-
-    </section>
-    
+   </div>
 </body>
 </html>
