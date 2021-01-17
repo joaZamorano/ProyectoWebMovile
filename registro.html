@@ -7,44 +7,56 @@
     <link rel="stylesheet" href="registro.css">
 </head>
 <body>
-   <div class="registerbox">
+   <form id="register-box" class="registerbox" action="#">
        <h1><b><i>Registrate </i></b></h1>
        <hr>
        <br>
        <table >
        <tr>
            <td width="50%">Nombre:</td>  
-           <td width="50%"><input type="text"/></td> 
+           <td width="50%"><input class="form-group" name="nombre" type="text" /></td> 
        </tr>
            <tr>
            <td width="50%">Apellido:</td>
-           <td width="50%"><input type="text"/></td>
+           <td width="50%"><input class="form-group" name="apellido" type="text" /></td>
            </tr>
        <tr>
            <td width="50%">Rut</td>  
-           <td width="50%"><input type="text"/></td>
+           <td width="50%"><input class="form-group" name="rut" type="text" /></td>
        </tr>
            <tr>
            <td width="50%">Correo:</td> 
-           <td width="50%"><input type="text"/></td>
+           <td width="50%"><input class="form-group" name="correo" type="email" /></td>
            </tr>
+        <tr>   
+            <td width="50%">Contraseña:</td> 
+            <td width="50%"><input class="form-group" id="pass" name="password" type="password"  /></td>
+        </tr>
+        <tr>   
+            <td width="50%">Confirmar Contraseña:</td> 
+            <td width="50%"><input class="form-group" name="pass2" type="password" /></td>
+        </tr>
        <tr>   
            <td width="50%">Telefono:</td> 
-           <td width="50%"><input type="text"/></td>
+           <td width="50%"><input class="form-group" name="tel" type="text" /></td>
        </tr> 
            <tr>    
            <td width="50%">Fecha de nacimiento:</td> 
-           <td width="50%"><input type="date"/></td>
+           <td width="50%"><input class="form-group" name="fechaN" type="date" /></td>
         </tr>
     <tr>
         <div class="botones">
-            <form action="index.html" method="GET">
+            <form action="index.html" method="POST">
          <button type="submit" formaction="login.html">Volver</button>
          <button type="submit" formaction="index.html" onclick="alert('Registro exitosa!')">Aceptar</button>
      </form>
         </div>
     </tr>
 
-   </div>
+</form>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/additional-methods.min.js"></script>
+<script src="validaciones.js"></script>
 </body>
 </html>
