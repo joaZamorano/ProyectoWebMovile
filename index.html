@@ -1,52 +1,212 @@
+/*este si*/
 
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>hotelDiversion.cl</title>
-    </head>
-    <body> <h1>Hotel la diversion </h1> <div>Filtrar habitaciones</div> <input type="checkbox"> <Select>habitacion
-        <option >1 estrella</option>
-        <option >2 estrella</option>
-        <option >3 estrella</option>
-        <option >vip</option>
-    </Select> <br>
-    
-    <div>Conexion a internet</div>
-    <input type="checkbox"> <Select>Conexion a internet
-        <option >Si</option>
-        <option >No</option>
-        </Select> <br>
-        <div>Television</div>
-    <input type="checkbox"> <Select>Television
-        <option >Si</option>
-        <option >No</option>
-        </Select> <br>
-        <div>Television cableada</div>
-    <input type="checkbox"> <Select>Television cableada
-        <option >Si</option>
-        <option >No</option>
-        </Select> <br>
-        <div>Mini refrigerador</div>
-    <input type="checkbox"> <Select>Mini refrigerador
-        <option >Si</option>
-        <option >No</option>
-        </Select> <br>
-        <div>Servicio a la habitacion</div>
-    <input type="checkbox"> <Select>Servicio a la habitacion
-        <option >Si</option>
-        <option >No</option>
-        </Select> <br>
-    
-    |   <form action="reservar.html" method="GET">
-            <button type="submit" formaction="Habitaciones reservadas.html"> Habitacion Reservada</button> 
-            <button type="submit" formaction="login.html" >Login </button > 
-            <br>  
-            <img src="./img/Habitaciones/1.jpg" alt="" width="500" height="333"
-            ><br>
-            <Button type="submit" formaction="reservar.html" >Reservar</Button> 
-            <button type="submit" formaction="caracteristicas.html" >Caracteristicas</button>
-        </form>
-    </body> 
-    </html>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HotelLaDiversion.cl</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Habitaciones</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Redes sociales</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Login</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Disponibilidad</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Características</a>
+
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>Hotel la Diversion</h1>
+            <h2>Agencia de hospedaje como ninguna otra</h2>
+        </div>
+    </header>
+    <main>
+        <section class="team contenedor" id="equipo">
+            <h3>Nuestro equipo</h3>
+            <p class="after">Conoce a la gente asombrosa y creativa</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people1.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Ignacio Morales</h4>
+                        <p>Jefe del proyecto</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Joaquin Zamorano</h4>
+                        <p>oh dios mio solo mirenlo</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people3.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Sofia Cabrera</h4>
+                        <p>furra y con armas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3>Nuestros servicios</h3>
+                <p class="after">Siempre mejorando para ti</p>
+                <div class="servicios">
+                    <div class="caja-servicios">
+                        <img src="img/heart.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Mejorando el servicio de hospedaje para cuando quieras venir</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/responsive.png" alt="">
+                        <h4>Reserva desde donde quieras</h4>
+                        <p>Nuestros sitios web tanto en telefonos, tablets como en computadoras para que puedas reservar</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/efectos.png" alt="">
+                        <h4>Todo tipo de facturas</h4>
+                        <p>No te preocupes por como facturar, nosotros nos ajustamos a ti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work contenedor" id="trabajo">
+            <h3>Habitaciones</h3>
+            <p class="after">Habitaciones para todo el publico</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todas</li>
+                    <li class="filter" data-nombre='diseño'>Mayor costo</li>
+                    <li class="filter" data-nombre='programacion'>Costo intermedio</li>
+                    <li class="filter" data-nombre='marketing'>Proximamente</li>
+
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion1.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>1 estrella</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion2.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>2Estrellas</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion3.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>3Estrellas
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño1.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Vip1</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño2.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Vip2</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño3.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Vip3</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing1.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Proximamente</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing2.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Proximamente</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing3.jpg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Proximamente</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>Hotel? Trivago </p>
+        </div>
+
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+</html>
