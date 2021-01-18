@@ -25,6 +25,7 @@ $(function() {
         || value.lenght >=8
     }, 'Ingrese un rut válido')
 
+
    $("#register-box").validate({
        rules: {
            nombre: {
@@ -133,6 +134,32 @@ $(function() {
                 required: 'Debe ingresar su fecha de retiro'
             }
         }
+
+
    });
+
+   $("#login-box").validate({
+    rules: {
+        user: {
+            required: true,
+            user: true
+        },
+        pass: {
+            required: true,
+            pass: true
+        },
+
+     messages: {
+         user: {
+             required: 'Este campo es obligatorio',
+             user: 'Debe ingresar su usuario'
+         },
+         pass: {
+             required: 'Este campo es obligatorio',
+             pass: 'Debe ingresar su contraseña'
+         }
+     }
+    }
+});
 
 });
