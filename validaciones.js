@@ -22,7 +22,7 @@ $(function() {
 
     $.validator.addMethod('RutLargo', function(value, element){
         return this.optional(element)
-        || value.lenght >=9
+        || value.lenght >=8
     }, 'Ingrese un rut válido')
 
    $("#register-box").validate({
@@ -63,7 +63,7 @@ $(function() {
 
            rut: {
                required: 'Debe ingresar su rut',
-               rut: 'Debe ingresar un rut válido'
+               rut: 'Debe ingresar un rut válido',
            },
 
            correo: {
@@ -84,8 +84,55 @@ $(function() {
             fechaN: {
                 required: 'Debe ingresar su fecha de nacimiento'
             }
-
-
-       }
+        }
    }); 
+
+   $("#reserve-box").validate({
+        rules: {
+            Nombre: {
+                required: true,
+                nowhitespace: true
+            },
+            Apellido: "required",
+            Rut: {
+                required: true,
+                Rut: true,
+                RutLargo: true
+            },
+            Correo: {
+                required: true,
+                correo: true
+            },
+            Tel: "required",
+            FechaLL: "required",
+            FechaR: "required"
+        },
+        messages: {
+            Nombre: {
+                required: 'Debe ingresar su nombre',
+                nowhitespace: 'No deben haber espacios en blanco'
+            },
+            Apellido: {
+                required: 'Debe ingresar su apellido'
+            },
+            Rut: {
+                required: 'Debe ingresar su rut',
+                Rut: 'El dato Rut es obligatorio',
+            },
+            Correo: {
+                required: 'Debe ingresar su correo',
+                Correo: 'El dato Correo es obligatorio'
+            },
+            Tel: {
+                required: 'Debe ingresar su teléfono'
+            },
+            FechaLL: {
+                required: 'Debe ingresar su fecha de llegada'
+            },
+            FechaR: {
+                required: 'Debe ingresar su fecha de retiro'
+            }
+        }
+   });
+
 });
