@@ -1,5 +1,5 @@
 :root{
-  --color1: rgb(219,144,.5);
+  --color1: rgb(179, 86, 0);
   --color2: rgba(23, 180, 83, 0.877);
   --color3: rgba(11,194,211, 0.623);
   --fondo: #f2f2f2;
@@ -311,8 +311,8 @@ nav .enlaces a:hover{
   height: 10%;
 }
 
-.textos-work h4{
-  line-height: 30px;
+.textos-work p{
+  line-height: 15px;
   font-weight: 300;
 }
 
@@ -415,3 +415,33 @@ footer p{
     margin: auto;
   }
 }
+
+.boton1{
+  position: fixed;
+  top: 1200px;
+  left: 1300px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  }
+  
+  .boton2{
+      position: relative;
+      top:30px;
+      left: 300px;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 15px 20px;
+      text-decoration: none;
+  }
+  
+  .boton3{
+          position: relative;
+          top:-200px;
+          left: -250px;
+          border-radius: 5px;
+          display: inline-block;
+          padding: 15px 20px;
+          text-decoration: none;
+  }

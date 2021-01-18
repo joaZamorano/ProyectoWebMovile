@@ -48,7 +48,7 @@ $(function () {
         $('html, body').animate({
             scrollTop: trabajo -100
         },600);
-    });
+    });/* */
 
     $('#enlace-contacto').on('click', function(e){
         e.preventDefault();

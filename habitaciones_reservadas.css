@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondo4.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+.habitacionesreservadas{
+    margin: 0 ;
+    padding: 0px 0px;
+    background-image: url(img/fondo.jpg); 
+    color: whitesmoke;  
+}
+.boton{ 
+    border-radius: 10px;
+    height: 50px; 
+    color:white;
+    padding: 0px 5px;
+    cursor: pointer;
+}
