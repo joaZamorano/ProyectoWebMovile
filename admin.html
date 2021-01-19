@@ -20,34 +20,43 @@
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>nombre</label><label class="validation-error hide" id="fullNameValidationError">Todos los campos son obligatorios</label>
+                        <label><b>Nombre</b></label><label class="validation-error hide" id="fullNameValidationError">Todos los campos son obligatorios</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
-                        <label>rut</label>
+                        <label><b>Rut</b></label>
                         <input type="text" name="empCode" id="empCode">
                     </div>
                     <div>
-                        <label>correo</label>
+                        <label><b>Correo</b></label>
                         <input type="text" name="salary" id="salary">
                     </div>
                     <div>
-                        <label>habitacion</label>
+                        <label><b>Habitacion</b></label>
                         <input type="text" name="city" id="city">
-                    </div>
+                    </div><br>
                     <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="actualizar">
+                        
                     </div>
+                    
                 </form>
+                
+               <div class="boton">
+                    <form action="login.html" method="POST">
+                        <button type="submit" formaction="login.html">Atras</button>
+                
+                    </form>
+                </div>
             </td>
             <td>
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
-                            <th>nombre</th>
-                            <th>rut</th>
-                            <th>correo</th>
-                            <th>habitacion</th>
+                            <th>Nombre</th>
+                            <th>Rut</th>
+                            <th>Correo</th>
+                            <th>Habitacion</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -59,11 +68,11 @@
         </tr>
     </table>
     <script src="js/script.js"></script>
-    <div class="boton">
+   <!-- <div class="boton">
         <form action="login.html" method="POST">
             <button type="submit" formaction="login.html">Atras</button>
     
-        </form>
+        </form>-->
     </div>
 </body>
 
