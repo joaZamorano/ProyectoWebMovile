@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="adminV.css">
+</head>
+
+<body>
+    <div class="admin">
+
+
+
+        <center><h1><b>Administrador</b></h1></center><hr>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>nombre</label><label class="validation-error hide" id="fullNameValidationError">Todos los campos son obligatorios</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>rut</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>correo</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>habitacion</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>nombre</th>
+                            <th>rut</th>
+                            <th>correo</th>
+                            <th>habitacion</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+    <div class="boton">
+        <form action="login.html" method="POST">
+            <button type="submit" formaction="login.html">Atras</button>
+    
+        </form>
+    </div>
+</body>
+
+</html>
